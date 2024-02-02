@@ -30,6 +30,13 @@
     margin-right: 40px;
     
 }
+.projectimg{
+    height: 40px;
+    float: left;
+    margin-right: 40px;
+    
+}
+
 .skillsimg-dev{
     height: 150px;
     float: right;
@@ -145,6 +152,14 @@ h3 {
     color:#11999E;
     padding-bottom: 10px;
 }
+
+
+.h3_card {
+    font-family: 'Montserrat', sans-serif;
+    color:#11999E;
+
+}
+
 a{
     color:#11999E;
     font-family: 'Montserrat', sans-serif;
@@ -210,3 +225,56 @@ p{
     position: relative;
  
 }
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    padding: 4px 4px;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.project-card:hover {
+    background-color: #b4d4ff;
+}
+
+.project-row{
+    width: 50%;
+    margin: 150px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+
+}
+
+.badge-roles {
+    font-size:xx-small;
+    background-color: #11999E;
+    color: white;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .badge-skills {
+    font-size:xx-small;
+    background-color: grey;
+    color: white;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .cuttoff-text {
+    --max-lines: 3; 
+    overflow: hidden;
+     
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+  }
