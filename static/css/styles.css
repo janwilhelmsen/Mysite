@@ -114,7 +114,7 @@
 
 /****************** HTML tag section   ***********************/
 body {
-    margin: 0px;
+    margin: 10px;
     text-align: center;
     font-family: 'Merriweather', serif;
     background-color: #ffffff;
@@ -156,7 +156,7 @@ h3 {
 
 .h3_card {
     font-family: 'Montserrat', sans-serif;
-    color:#11999E;
+    color:white;
 
 }
 
@@ -228,29 +228,32 @@ p{
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 10px;
 }
 
 .project-card {
     border: 1px solid #ccc;
-    padding: 4px 4px;
+    /*padding: 4px 4px;*/
     text-align: left;
     text-decoration: none;
     color: #333;
-    display: block;
+    /*display: block;*/
 }
 
 .project-card:hover {
     background-color: #b4d4ff;
+    
 }
 
-.project-row{
-    width: 50%;
-    margin: 150px auto 100px auto;
+.projects-row{
+    width: 40%;
+    margin: 50px auto 50px auto;
     text-align: left;
-    line-height: 2;
+    /*line-height: 2;*/
 
 }
+
+
 
 .badge-roles {
     font-size:xx-small;
@@ -271,10 +274,74 @@ p{
   }
 
   .cuttoff-text {
-    --max-lines: 3; 
-    overflow: hidden;
-     
-    display: -webkit-box; 
+    --max-lines: 6; 
+    overflow:auto;     
+    /*display: -webkit-box; 
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: var(--max-lines);
+    -webkit-line-clamp: var(--max-lines);*/
+    
+  }
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+ .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    /*display: block;*/
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility:hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: dodgerblue;
+    color: white;
+    padding-left: 20px;
+    /*padding-bottom: 20px;*/
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: grey;
+    color: white;
+    font-size: x-small;
+    transform: rotateY(180deg);
+  } 
+
+  /*GRID*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .grid-item {
+    width: 50%;
+    margin: 150px auto 100px auto;
+    text-align: left;
+    line-height: 2;
   }
