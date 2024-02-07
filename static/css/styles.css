@@ -259,7 +259,14 @@ p{
 
 }
 
-
+.badge-goal {
+    font-size:normal;
+    background-color: red;
+    color: white;
+    padding: 0px 6px;
+    text-align: left;
+    border-radius: 10px;
+  }
 
 .badge-roles {
     font-size:xx-small;
@@ -352,7 +359,7 @@ p{
     line-height: 2;
   }
 
-table{width: 40%;
+table{width: 60%;
     table-layout: auto;
     border: 1px solid;
 
